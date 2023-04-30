@@ -8,4 +8,4 @@ and returns it in the form of:
 
 (HH:MM EST >>> HH:MM MST) Name: +1XXXXXXXXXX
 
-This project is a paid commision.
+This project is a paid commision for a client's very specific use case.
