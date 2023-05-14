@@ -1,4 +1,3 @@
-console.log("Formatter Online");
 let inputText = document.getElementById('txt');
 let format = document.getElementById('format');
 let p = document.getElementById('result');
@@ -12,5 +11,4 @@ format.addEventListener("click", function(){
     let phone = textValue.slice(colon + 2);
     phone = phone.replace(/-/g, "");
     p.textContent = `(${timeHour}:${timeMinute} EST >>> ${timeHour - 2}:${timeMinute} MST) ${name}: +1${phone}`;
-    console.log(timeHour);
 })
