@@ -1,10 +1,13 @@
 console.log("Formatter Online");
-var inputText = document.getElementById('txt');
-var format = document.getElementById('format');
-var p = document.getElementById('result');
-var textValue = '';
+let inputText = document.getElementById('txt');
+let format = document.getElementById('format');
+let p = document.getElementById('result');
+let textValue = '';
 format.addEventListener("click", function(){
     textValue = inputText.value;
-    p.textContent = textValue;
-    console.log(inputText.value);
+    let timeHour = textValue[1] + textValue[2];
+    //p.textContent = textValue;
+    //console.log(inputText.value);
+    p.textContent = timeHour - 2;
+    console.log(timeNum);
 })
