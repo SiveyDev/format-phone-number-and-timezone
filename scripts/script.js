@@ -9,8 +9,8 @@ format.addEventListener("click", function(){
     let timeMinute = textValue[4] + textValue[5];
     let colon = textValue.lastIndexOf(':');
     let name = textValue.slice(8, colon);
-    //p.textContent = textValue;
-    //console.log(inputText.value);
-    p.textContent = `(${timeHour}:${timeMinute} EST >>> ${timeHour - 2}:${timeMinute} MST) ${name}: +1`;
+    let phone = textValue.slice(colon + 2);
+    phone = phone.replace(/-/g, "");
+    p.textContent = `(${timeHour}:${timeMinute} EST >>> ${timeHour - 2}:${timeMinute} MST) ${name}: +1${phone}`;
     console.log(timeHour);
 })
